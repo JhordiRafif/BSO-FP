@@ -79,20 +79,7 @@
                 </div>
             </div>
         </nav>
-        <!-- Header --><br></br>
-  <section class="bg-custom-5 height-4">
-    <div class="container">
-      <div class="row">
-        <div class="col my-6">
-          <div class="d-flex justify-content-center align-items-center flex-column">
-            <h2 class="text-warning mt-5 font-weight-light text-monospace">BSO Otoparts</h2>
-            <span class="lead text-dark d-block">Solusi Kendaraan Anda :))</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Akhir Header -->
+       
     <?php
         if ($userRole != 'buyers') {
             echo "Hanya pembeli yang dapat membeli barang";
@@ -100,16 +87,18 @@
         
         echo "
         <br>
-        <p>Nama barang:</p>
-        <h1>$goodsName</h1>
-        <p>Stok barang:</p>
-        <h3>$goodsStock</h3>
-        <p>Harga per stok</p>
-        <h3>$goodsPrice</h3>
-        <p>Nama penjual:</p>
-        <h3>$salesName</h3>
+        <div class='card'>
+        <h3 class='card-header'>Pembelian</h3>
+        <div class='card-body'>
+        <h5 class='card-title'>Nama Barang</h5>
+        <p class='card-text'>$goodsName.</p>
+        <h5 class='card-title'>Stok Barang</h5>
+        <p class='card-text'>$goodsStock.</p>
+        <h5 class='card-title'>Harga (per Stock) </h5>
+        <p class='card-text'>Rp.$goodsPrice.</p>
+        <h5 class='card-title'>Sales </h5>
+        <p class='card-text'>$salesName.</p>
         ".($userRole != 'buyers' ? "<p>hanya pembeli yang dapat membeli barang!</p>" : ($goodsStock < 1 ? "<p>stok habis, tidak bisa membeli!</p>" : "
-            <br><h2>pembelian</h2>
             <form method='POST'>
                 <label for='stock'>stok</label>
                 <input
@@ -120,8 +109,14 @@
                     max='$goodsStock'
                     value='1'
                 >
-                <button type='submit'>Beli</button>
+                <button type='submit' class='btn btn-primary' >Beli</button>
+                
             </form>
+        
+        
+        </div>
+        </div>
+
         "));
     ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>

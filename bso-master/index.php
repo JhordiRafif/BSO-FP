@@ -95,25 +95,35 @@
     </div>
   </section>
   <!-- Akhir Header -->
-
-        <br>
+  <br>
         </br>
-        <p>Daftar barang</p>
+  <div class="card">
+        <div class="card-body">
+        <h5 class="card-header">Cari Barang</h5>
+        <div class="card-body">
         <form method="GET">
-            <label for="range-min">Rentang harga terkecil</label>
+            <label for="range-min">Rentang harga</label>
             <input
                 id="range-min"
                 name="rangeMin"
             >
-            <label for="range-max">Rentang harga terbesar</label>
+            <label for="range-max">Hingga</label>
             <input
                 id="range-max"
                 name="rangeMax"
             >
-            <button type="submit">Cari</button>
+            <button type="submit" class="btn btn-primary" >Cari</button>
         </form>
+        </div>
+        </div>
+        </div>
         <br>
-        <br/>
+        </br>
+        <div class="card">
+        <div class="card-body">
+        <h3 class="card-header">Daftar Barang</h3>
+        <div class="card-body">
+        
         <?php
             $query = "SELECT goods.*, sales.username AS sales_name FROM goods
                     JOIN sales
@@ -146,7 +156,11 @@
                 }
             }
         ?>
+        </div>
     </div>
+    </div>
+    
+    <br></br>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
@@ -166,7 +180,7 @@
       <div class="row mx-3">
         <div class="col-md-7 my-3 mx-auto">
           <div class="d-flex justify-content-center align-items-center flex-column text-center">
-            <img src="assets/img/profile1.jpg" width="120" alt="" class="rounded-circle img-thumbnail shadow-sm mb-3">
+            <img src="assets/img/profile6.jpg" width="120" alt="" class="rounded-circle img-thumbnail shadow-sm mb-3">
             <h3 class="font-weight-normal d-block m-0">Rafif Jhordi</h3>
             <span class="lead d-block m-0">(1908561102)</span>
             <span class="d-block text-black-50">Kelas E</span>
@@ -174,7 +188,7 @@
         </div>
         <div class="col-md-7 my-3 mx-auto">
           <div class="d-flex justify-content-center align-items-center flex-column text-center">
-            <img src="assets/img/profile2.jpg" width="120" alt="" class="rounded-circle img-thumbnail shadow-sm mb-3">
+            <img src="assets/img/profile5.jpg" width="120" alt="" class="rounded-circle img-thumbnail shadow-sm mb-3">
             <h3 class="font-weight-normal d-block m-0">Krishna Aryawan</h3>
             <span class="lead d-block mb-0">1908561097</span>
             <span class="d-block text-black-50">Kelas E</span>
@@ -182,26 +196,26 @@
         </div>
         <div class="col-md-7 my-3 mx-auto">
           <div class="d-flex justify-content-center align-items-center flex-column text-center">
-            <img src="assets/img/profile2.jpg" width="120" alt="" class="rounded-circle img-thumbnail shadow-sm mb-3">
-            <h3 class="font-weight-normal d-block m-0">AFK</h3>
-            <span class="lead d-block mb-0">19085610---</span>
+            <img src="assets/img/profile7.jpg" width="120" alt="" class="rounded-circle img-thumbnail shadow-sm mb-3">
+            <h3 class="font-weight-normal d-block m-0">Fahmi Ahmad Arum Pratama</h3>
+            <span class="lead d-block mb-0">1908561088</span>
             <span class="d-block text-black-50">Kelas E</span>
           </div>
         </div>
         <div class="col-md-7 my-3 mx-auto">
           <div class="d-flex justify-content-center align-items-center flex-column text-center">
-            <img src="assets/img/profile2.jpg" width="120" alt="" class="rounded-circle img-thumbnail shadow-sm mb-3">
-            <h3 class="font-weight-normal d-block m-0">AFK</h3>
-            <span class="lead d-block mb-0">19085610---</span>
+            <img src="assets/img/profile8.jpg" width="120" alt="" class="rounded-circle img-thumbnail shadow-sm mb-3">
+            <h3 class="font-weight-normal d-block m-0">Udha Krisna Yasa</h3>
+            <span class="lead d-block mb-0">1908561089</span>
             <span class="d-block text-black-50">Kelas E</span>
           </div>
         </div>
         <div class="col-md-7 my-3 mx-auto">
           <div class="d-flex justify-content-center align-items-center flex-column text-center">
-            <img src="assets/img/profile4.png" width="120" alt="" class="rounded-circle img-thumbnail shadow-sm mb-3">
-            <h3 class="font-weight-normal d-block m-0">AFK</h3>
-            <span class="lead d-block mb-4">19085610---</span>
-            <span class="d-block text-black-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis voluptatem saepe commodi, animi debitis deleniti sapiente, delectus numquam quaerat, fugit repudiandae eum!</span>
+            <img src="assets/img/profile10.png" width="120" alt="" class="rounded-circle img-thumbnail shadow-sm mb-3">
+            <h3 class="font-weight-normal d-block m-0">Anita Dewi</h3>
+            <span class="lead d-block mb-4">1908561104</span>
+            <span class="d-block text-black-50">Terima kasih, ini merupakan tugas final project dari mata kuliah praktikum basis data tahun 2021!</span>
           </div>
         </div>
       </div>
@@ -233,5 +247,4 @@
 if (isset($_POST['logout'])) {
     session_unset();
     session_destroy();
- 
 }
