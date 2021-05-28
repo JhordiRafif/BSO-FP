@@ -36,7 +36,11 @@
                 </div>
             </div>
         </nav>
-        <h2>Cashflow</h2>
+        <div class="card">
+        <div class="card-body">
+        <h5 class="card-header">Cashflow</h5>
+        <div class="card-body">
+       
     <p>Berbagai arus kas / uang untuk setiap pembeli dan penjual</p>
     <form method="GET">
         <label for="min">Minimum arus kas</label>
@@ -45,7 +49,10 @@
             type="number"
             id="min"
         >
-        <button type="submit">Cari</button>
+        <button type="submit" class="btn btn-primary">Cari</button>
+        </div>
+        </div>
+        </div>
     </form>
     <br>
 </br>
@@ -95,8 +102,13 @@
                 $totalCashflow = $cashflow['total_cashflow'];
                 echo "
                     <div>
+                    <div class='card'>
+                    <div class='card-body'>
+                   
                         <p>Username: $username</p>
                         <p>Total cashflow: $totalCashflow</p>
+                    </div>
+                    </div>
                     </div>
                     <hr class='dashed'>
                     ";
